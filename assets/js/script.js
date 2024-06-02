@@ -17,6 +17,23 @@
                 backdrop.style.display = 'none';
                 document.body.style.overflow = 'auto';
             });
+
+
+
+
+// Js for the play button start
+
+document.getElementById('play-button').addEventListener('click', function () {
+    var videoContainer = document.getElementById('video-container');
+    var video = document.getElementById('video');
+    var playButton = document.getElementById('play-button');
+
+    videoContainer.style.background = 'none';
+    playButton.style.display = 'none';
+    video.style.display = 'block';
+    video.play();
+});
+
   
 
 
